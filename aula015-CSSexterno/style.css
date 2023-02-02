@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+        body{
+            background-color: rgb(242, 253, 215);
+            text-align: left;
+        }
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: brown;
+            background-color: rgb(78, 112, 112);
+        }
+        h2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 50px;
+            color: rgb(126, 11, 110);
+        }
+        p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: rgb(33, 59, 8);
+            text-align: left;
+        }
+    
