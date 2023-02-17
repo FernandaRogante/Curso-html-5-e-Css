@@ -13,13 +13,30 @@
             width: 500px;
         }
         thead, tfoot{
-            background-color: cadetblue;
+            background-color: rgb(39, 65, 66);
             color: white;
+            position: relative;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(186, 241, 255);
         }
         td,th{
             border: 1px solid black;
             padding: 10px;
             font-weight: bold;
+        }
+        caption{
+            font-size: 1.5em;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 10px;
+            background-color: rgb(194, 190, 190);
+            border: 2px solid black;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 1px;
+            background-color:  rgb(39, 65, 66);
+            
         }
         td.numero{
             text-align: right;
@@ -33,6 +50,7 @@
     <H1>Tabelas Grandes</H1>
     <!--ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -41,9 +59,10 @@
             TR, TD, TH
     -->    
     <table>
+        <CAPtion>População de cada Estado</CAPtion>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -57,10 +76,110 @@
                 <td>Santa Catarina</td>
                 <td class="numero">219.999</td>
             </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numero">2.999</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">211.99</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">21.99</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">241.99</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">221.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">29.99</td>
+            </tr>
            </tr>
         </tbody>
         <tfoot>
-            <th><strong></strong>total de habitantes</th>
+            <th scope="row"><strong>total de habitantes</strong></th>
             <td class="numero">63656.3.3</td>
         </tfoot>
     </table>
