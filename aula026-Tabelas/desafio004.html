@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.cnome{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupando colunas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
+        </colgroup>
+        <caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>25</td>
+                <td>jornalista</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Luiz</td>
+                <td>M</td>
+                <td>34</td>
+                <td>Contador</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>35</td>
+                <td>Motorista</td>
+            </tr>
+            <tr>
+                <td>Magali</td>
+                <td>F</td>
+                <td>38</td>
+                <td>Professora</td>
+            </tr>
+        </caption>
+    </table>
+</body>
+</html>
