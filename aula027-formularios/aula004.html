@@ -9,14 +9,23 @@
 <body>
     <h1>Exemplo de Formuários</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="iemail" id="email" autocomplete="email">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <fieldset>
+            
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="iemail" id="email" autocomplete="email">
+                </p>
+                <p>
+                    <label for="icel">Celual</label autocomplete>
+                    <input type="tel" name="cel" id="icel" autocomplete="cel" pattern="^[0-9]{4}-[0-9]{4}$">
+                </p>
+                
+        </fieldset>
+       <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
 
     </form>
 </body>
